@@ -1,31 +1,27 @@
 #!/usr/bin/env bash
 
 export WORKSPACE=$PWD
-export GIT_EMAIL=$1
-export GIT_USERNAME=$2
-export GIT_PASSWORD=$3
-export DEVSTACK_BRANCH="stable/newton"
-export phy_intf="enp0s4"
-
-echo "******************************************************"
-echo "Contrail-installer : Configure SSH keys for github"
-echo "******************************************************"
+export phy_intf="enp0s8"
 
 echo "*************************************************"
-echo "Contrail-installer : Installing the required Packages"
+echo "Pxe-installer : Installing the required Packages"
 echo "*************************************************"
 # Steps to install and configure devstack
 sudo apt-get update 
 sudo apt-get -y install git vim-gtk libpq-dev python-pip 
-#sudo pip install git-review tox 
-
-git config --global user.email $GIT_EMAIL
-git config --global user.name $GIT_USERNAME
-git config --global user.editor "vim"
 
 echo "******************************************************************************"
-echo "Contrail-installer : Checkout contrail-installer and devstack repositories"
+echo "Pxe-installer : fetch and setup the FOG"
 echo "******************************************************************************"
+sudo mkdir -p /opt/fog-setup
+cd /opt/fog-setup
+
+sudo wget https://sourceforge.net/projects/freeghost/files/latest/download?source=files
+sudo mv download?source=files fog_1.4.4.tar.gz
+sudo tar -xvzf fog*
+cd fog*
+cd bin
+sudo ./installfog.sh
 
 
 
