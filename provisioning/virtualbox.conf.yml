@@ -1,11 +1,11 @@
 ---
-#box: "boxcutter/ubuntu1604-desktop"
-box: "boxcutter/ubuntu1404-desktop"
-contrail_devstack_vm:
-  host_name: contrail_devstack_vm
-  memory: 6144
+box: "boxcutter/ubuntu1604-desktop"
+#box: "boxcutter/ubuntu1404-desktop"
+pxe_server_vm:
+  host_name: pxe_server_vm
+  memory: 4096
   cpus: 2
   git_email: deepak.dt@gmail.com
   git_username: "deepak-dt"
   git_password: "SRHgit999nma"
-  provider_ip: "203.0.113.9"
+  provider_ip: "203.0.113.99"
