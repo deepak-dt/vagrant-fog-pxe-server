@@ -1,2 +1,2 @@
-# vagrant-contrail-devstack
-Vagrant setup for all-in-one OpenContrail+Devstack setup environment
+# vagrant-fog-pxe-server
+Vagrant setup for PXE server setup based on FOG
