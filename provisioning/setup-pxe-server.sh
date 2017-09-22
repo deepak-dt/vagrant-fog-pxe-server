@@ -24,4 +24,6 @@ cd bin
 sudo ./installfog.sh
 
 
+# For PXE-client
+# wget http://archive.ubuntu.com/ubuntu/dists/xenial-updates/main/installer-amd64/current/images/netboot/netboot.tar.gz
 
