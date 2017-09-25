@@ -30,6 +30,8 @@ Vagrant.configure("2") do |config|
       config.vm.network "private_network", ip: vagrant_config['pxe_server_vm']['provider_ip']
     end
   end
+  
+  config.vm.provision "file", source: "ubuntu-16.04.3-server-amd64.iso", destination: "/home/vagrant/ubuntu-16.04.3-server-amd64.iso"
 
   config.vm.synced_folder '.', '/vagrant'
 
