@@ -31,7 +31,7 @@ Vagrant.configure("2") do |config|
     end
   end
   
-  config.vm.provision "file", source: "ubuntu-16.04.3-server-amd64.iso", destination: "/home/vagrant/ubuntu-16.04.3-server-amd64.iso"
+  #config.vm.provision "file", source: "ubuntu-16.04.3-server-amd64.iso", destination: "/home/vagrant/ubuntu-16.04.3-server-amd64.iso"
 
   config.vm.synced_folder '.', '/vagrant'
 
