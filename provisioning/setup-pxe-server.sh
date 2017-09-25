@@ -101,8 +101,8 @@ sudo mkdir -p /var/www/html/ubuntu
 sudo mkdir -p /var/www/html/ubuntu/ubuntu-16.04-server-amd64
 
 # Get the ISO
-#sudo wget http://releases.ubuntu.com/16.04/ubuntu-16.04.3-server-amd64.iso /var/lib/tftpboot/iso/
-sudo mv /home/vagrant/ubuntu-16.04.3-server-amd64.iso /var/lib/tftpboot/iso/
+sudo wget http://releases.ubuntu.com/16.04/ubuntu-16.04.3-server-amd64.iso /var/lib/tftpboot/iso/
+#sudo mv /home/vagrant/ubuntu-16.04.3-server-amd64.iso /var/lib/tftpboot/iso/
 
 # Create the mount point
 sudo su -c "echo -e '/var/lib/tftpboot/iso/ubuntu-16.04.3-server-amd64.iso /var/www/html/ubuntu/ubuntu-16.04-server-amd64 udf,iso9660 user,loop 0 0' >> /etc/fstab"
