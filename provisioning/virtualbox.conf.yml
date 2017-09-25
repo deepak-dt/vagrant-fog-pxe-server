@@ -8,4 +8,4 @@ pxe_server_vm:
   git_email: deepak.dt@gmail.com
   git_username: "deepak-dt"
   git_password: "SRHgit999nma"
-  provider_ip: "203.0.113.99"
+  provider_ip: "203.0.113.127"
